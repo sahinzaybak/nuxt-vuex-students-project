@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500&display=swap');
+
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+*, *:focus {
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  overflow-x: hidden !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre, fieldset, ul, ol, menu, form {
+  margin: 0;
+}
+
+button, fieldset, iframe {
+  border: 0;
+}
+
+fieldset, ul, ol, button, menu {
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+textarea {
+  resize: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  padding: 0;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color:inherit;
+}
+
+a, a:focus, button, button:focus {
+  outline: none !important;
+  text-decoration: none;
+}
+
+a, button {
+  user-select: none;
+  transition: all .3s ease-in-out;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+section{
+    padding: 80px 0;
+}
+
+label{
+    margin-bottom: 0;
+}
+
+.custom-container{
+  position: relative;
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+  z-index: 99;
+}
+
+
+.icon {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+//MY CSS
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+//Page transitions
+.layout-enter-active, .layout-leave-active {
+    transition: opacity .5s
+}
+
+.layout-enter, .layout-leave-active {
+    opacity: 0
+  }
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet{
+    transition: all .3s;
+    opacity: 0.1 !important;
+    &-active{
+        opacity: 1 !important;
+        background: #18bd3b96 !important;
+        width: 31px !important;
+        height: 8px !important;
+        border-radius: 20px !important;
+    }
+} 
+
+.nav-link{
+    padding: 13px;
+}
+.nav-item {
+    font-size: 17px;
+}
+
+.nav-tabs {
+    // border-bottom: 1px solid #f0c27d;
+    margin-bottom: 75px;
+}
+
+.sss{
+    background-color: #f1f1f1;
+    &-item{
+      margin-bottom: 38px;
+      border-bottom: 1px solid #3535340f;
+      padding-bottom: 31px;
+      &__title{
+          font-size: 19px;
+          color: #2f2f2f;
+      }
+      &__desc{
+          font-size: 16px;
+          line-height: 1.7;
+          color: #404142;
+      }
+    }
+  }
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #3a3a3ad9;
+    background-color: #f0c27d;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+textarea{
+    background-color: rgba(255,255,255,0.90196);
+    width: 100%;
+    height: 182px;
+    padding: 16px;
+    border-color: #d4d4d4;
+    border-radius: 6px;
+    box-shadow: 0 5px 9px 1px rgba(0,42,91,0.01961);
+    color: #909090;
+    border: 0;
+}
+
+//GENERAL FORMS
+.create-task {
+    background-color: #eae8e8;
+    .custom-switch {
+      width: 100%;
+    }
+    &__main{
+        border-bottom: 1px solid gainsboro;
+        padding-bottom: 42px;
+        transition: all 0.5s;
+        &.opacity{
+            opacity: .4;
+        }
+        &:hover{
+            opacity: 1;
+        }
+        
+    }
+    &__title{
+        font-size: 26px;
+        margin-top: 7px;
+        color: #3ad25a;
+        margin-bottom: 10px;
+        letter-spacing: 1.2px;
+    }
+    &__form {
+      background-color: #eae8e8;
+      padding-bottom: 70px;
+    }
+    &__item {
+      margin-bottom: 20px;
+      width: 360px;
+      .info {
+        font-weight: 400;
+        color: #b39436;
+        font-size: 13px;
+      }
+      .icon{
+        color: #0f3869;
+        opacity: 0.6;
+      }
+    }
+    &__desc {
+      margin-bottom: 49px;
+      text-align: center;
+      color: #002a5b;
+      font-size: 15.8px;
+    }
+    &__wrp {
+      input,
+      select {
+        color: rgba(0,42,91,0.65098);
+        font-size: 16.1px;
+        border: 1px solid rgba(0,42,91,0.0902);
+        box-shadow: 0 5px 9px 1px rgba(0, 42, 91, 0.01961);
+        height: 52px;
+        background-color: rgba(254,252,252,0.98039);
+        border-radius: 6px;
+        width:100%;
+        padding: 0 16px;
+      }
+      textarea {
+        border: 1px solid rgba(0,42,91,0.0902);
+        width: 100%;
+        height: 194px;
+        padding: 16px;
+        font-size: 16.1px;
+        border-color: #d4d4d4;
+        border-radius: 6px;
+        box-shadow: 0 5px 9px 1px rgba(0, 42, 91, 0.01961);
+        color: rgba(0,42,91,0.65098);
+        border: 0;
+      }
+    }
+    :-ms-input-placeholder {
+        color: rgba(0,42,91,0.65098);
+    }
+    ::placeholder {
+        color: rgba(0,42,91,0.65098);
+    }
+  
+    .main-button {
+      padding: 12px 20px;
+    }
+    &__info {
+      .nav-tabs {
+        margin-bottom: 50px;
+      }
+      .nav-fill .nav-item {
+        font-size: 15.9px;
+      }
+      .sss {
+        &-item {
+          &__desc {
+            margin-bottom: 20px;
+            padding-left: 26px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            span {
+              font-weight: 500;
+              color: #484848;
+            }
+          }
+        }
+      }
+    }
+    &__choose {
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+    &.update {
+      .info {
+        font-size: 14px;
+        color: #5f5f5f;
+        font-weight: 400;
+        padding-left: 13px;
+        margin-bottom: 3px;
+      }
+      input,
+      textarea,
+      select {
+        color: #002a5b;
+        font-size: 16px;
+      }
+    }
+  }

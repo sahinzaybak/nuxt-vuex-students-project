@@ -1,0 +1,41 @@
+.main-button{
+    padding: 16px 26px;
+    margin-top: 35px;
+    display: inline-block;
+    border-radius: 4px;
+    transition: all .3s;
+    border-radius: 50px;
+    color:white;
+    &.green{
+        background-color: #18bd3b;
+        &:hover{
+            background-color: #24b54d;
+        }
+    }
+    &.blue{
+        background-color: #0b4992;
+        &:hover{
+            background-color: #0a3f7d;
+        }
+    }
+    &.dark{
+        background-color: #5d5c5c;
+    }
+    &.red{
+        background-color: #f11e3f;
+    }
+    &.orange{
+        background-color: #ecbb71;
+    }
+    &.borders{
+        background-color: transparent;
+        border: 1px solid #fbfdff66;
+    }
+    &.border-orange{
+         background-color: transparent;
+         border: 1px solid #f0c27d;
+         color:#f0c27d;
+        
+    }
+   
+}
