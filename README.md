@@ -1,5 +1,5 @@
 # VUEJS-VUEX-NUXTJS-Students-Project
-Benim kendi girişimim olan ve kodlama aşamaları halen devam eden projem..  Sadece üniversite öğrencilerin iş yaparak para kazanabilecekleri komisyon usulü bir sistem geliştirmekteyim. Backend REST API kısmını Node.js kullanarak hazırlıyorum, veritabanı olarak çok sevdiğim MongoDB'yi tercih ettim. Onunda kodlarını github repository'lerimde bulabilirsiniz.. Dediğim gibi halen geliştirme aşamasında olduğum için şu an ki mevcut kodlarda bile ileride değişiklik olacaktır..
+Benim kendi girişimim olan ve kodlama aşamalarına halen devam ettiğim projem..  Sadece üniversite öğrencilerin iş yaparak para kazanabilecekleri komisyon usulü bir sistem geliştirmekteyim. Backend REST API kısmını Node.js kullanarak hazırlıyorum, veritabanı olarak çok sevdiğim MongoDB'yi tercih ettim. Onunda kodlarını github repository'lerimde bulabilirsiniz.. Dediğim gibi halen geliştirme aşamasında olduğum için şu an ki mevcut kodlarda bile ileride değişiklik olacaktır..
 
 ## Build Setup
 
