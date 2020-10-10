@@ -1,4 +1,4 @@
-# nuxt-deneme
+# VUE-VUEX-NUXT-Students-Project
 
 ## Build Setup
 
@@ -18,3 +18,10 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+<br>
+<div align="center">
+  <img src="https://image.flaticon.com/teams/slug/smashicons.jpg" width="80">
+  <h3><i>Developer by Şahin ZAYBAK </i></h3>
+  <hr/>
+</div>
