@@ -93,8 +93,5 @@ export default {
           _district:this.district
        })
     }
-};
+})
 </script>
-
-<style lang="scss">
-</style>
