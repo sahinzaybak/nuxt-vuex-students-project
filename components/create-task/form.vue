@@ -79,47 +79,19 @@ export default {
     ...mapActions({ fetchTodoCategoryList: "task/fetchTodoCategoryList" })
   },
    methods: {
-      ...mapActions({ fetchCreateTask: "task/fetchCreateTask" }),
-      createTask(){
-         this.fetchCreateTask({
-            _title:this.title,
-            _detail:this.detail,
-            _category:this.selectedCategory,
-            _price:this.price,
-            _howMany:this.howMany,
-            _startedDate:this.startedDate,
-            _finishedDate:this.finishedDate,
-            _country:this.country,
-            _district:this.district
-         })
-      }
-
-
-
-
-
-
-
-
-      // getIl() {
-		// 	  	 	fetch("http://localhost:3000/il-ilce.json")
-      //             .then(result=>result.json())
-      //             debugger
-			  	 
-      // },
-      // getIlce() {
-      //   this.selectedIl = true;
-      //   this.ilceler = [];
-      //   this.bolge = [];
-      //   $axios.$get("http://localhost:3000/json/il-ilce.json").then(res => {
-      //     res.data.forEach(i => {
-      //       if (this.selected == i.il) {
-      //         this.ilceler.push(i.ilce);
-      //         this.bolge.push(i.bolge);
-      //       }
-      //     });
-      //   });
-      // }
+    ...mapActions({ fetchCreateTask: "task/fetchCreateTask" }),
+    createTask(){
+       this.fetchCreateTask({
+          _title:this.title,
+          _detail:this.detail,
+          _category:this.selectedCategory,
+          _price:this.price,
+          _howMany:this.howMany,
+          _startedDate:this.startedDate,
+          _finishedDate:this.finishedDate,
+          _country:this.country,
+          _district:this.district
+       })
     }
 };
 </script>
